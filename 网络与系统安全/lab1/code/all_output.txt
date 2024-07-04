@@ -1,0 +1,19 @@
+Start capture ip pcap...
+##############Captured packet with length: 56###############
+#     Capture time: 2024-05-10 20:52:38.142139
+#     ---------------以太网帧信息:---------------
+#     Destination MAC Address: e0:2b:e9:a8:2c:3f
+#     Source MAC Address: 44:ec:ce:d2:ff:c2
+#     Ether Type: 0x0800
+#     ---------------ip层信息：---------------
+#     IP Version: 4
+#     IP Header Length: 20 bytes
+#     Total Length: 40 bytes
+#     Protocol: 6
+#     Source IP Address: 51.104.15.253
+#     Destination IP Address: 172.20.16.71
+#     ---------------TCP 层信息：---------------
+#     Src-Port=443, Dst-Port=41682
+############################################################
+
+

@@ -1,0 +1,55 @@
+FUNCTION main :
+READ t1
+value := t1
+IF value < #2500 GOTO label1
+GOTO label2
+LABEL label1 :
+t4 := value * #17
+t3 := t4 / #1000
+t2 := #30 + t3
+commission := t2
+GOTO label3
+LABEL label2 :
+IF value < #6250 GOTO label6
+GOTO label5
+LABEL label6 :
+IF value >= #2500 GOTO label4
+GOTO label5
+LABEL label4 :
+t7 := value * #66
+t6 := t7 / #10000
+t5 := #56 + t6
+commission := t5
+GOTO label7
+LABEL label5 :
+IF value < #20000 GOTO label8
+GOTO label9
+LABEL label8 :
+t10 := value * #34
+t9 := t10 / #10000
+t8 := #76 + t9
+commission := t8
+GOTO label10
+LABEL label9 :
+t13 := value * #22
+t12 := t13 / #10000
+t11 := #100 + t12
+commission := t11
+LABEL label10 :
+LABEL label7 :
+LABEL label3 :
+IF commission < #39 GOTO label11
+GOTO label12
+LABEL label11 :
+commission := #39
+LABEL label12 :
+IF commission < value GOTO label15
+GOTO label14
+LABEL label15 :
+t14 := value / #5
+IF t14 != #0 GOTO label13
+GOTO label14
+LABEL label13 :
+WRITE commission
+LABEL label14 :
+RETURN #0

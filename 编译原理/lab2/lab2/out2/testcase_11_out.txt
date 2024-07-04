@@ -1,0 +1,2 @@
+Error type 11 at Line 10: "i" is not a function.
+Error type 11 at Line 27: "i" is not a function.

@@ -1,0 +1,2 @@
+Error type 12 at Line 24: "k" is not an integer.
+Error type 12 at Line 27: "abs2" is not an integer.

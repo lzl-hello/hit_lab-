@@ -1,0 +1,3 @@
+Error type 9 at Line 20: too many arguments to function "abs", except 1 args.
+Error type 9 at Line 22: too few arguments to function "abs2", except 2 args.
+Error type 9 at Line 24: Function "abs" is not applicable for arguments.

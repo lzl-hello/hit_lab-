@@ -1,0 +1,2 @@
+Error type 10 at Line 19: "i" is not an array.
+Error type 10 at Line 27: "j" is not an array.

@@ -1,0 +1,2 @@
+Error type 8 at Line 5: Type mismatched for return.
+Error type 8 at Line 24: Type mismatched for return.

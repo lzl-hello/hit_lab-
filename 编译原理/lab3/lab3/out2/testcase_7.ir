@@ -1,0 +1,163 @@
+FUNCTION sort :
+PARAM n
+DEC a 800
+i := #0
+j := #0
+LABEL label1 :
+IF i < n GOTO label2
+GOTO label3
+LABEL label2 :
+t4 := i * i
+t3 := #0 - t4
+t5 := #20 * i
+t2 := t3 + t5
+t1 := t2 - #50
+t8 := i * #8
+t9 := &a
+t7 := t9 + t8
+t10 := *t7
+value := t10 + #0
+*value := t1
+t13 := i * #8
+t14 := &a
+t12 := t14 + t13
+t15 := *t12
+index := t15 + #4
+*index := i
+t16 := i + #1
+i := t16
+GOTO label1
+LABEL label3 :
+i := #0
+LABEL label4 :
+IF i < n GOTO label5
+GOTO label6
+LABEL label5 :
+j := #0
+LABEL label7 :
+IF j < i GOTO label8
+GOTO label9
+LABEL label8 :
+t20 := i * #8
+t21 := &a
+t19 := t21 + t20
+t22 := *t19
+value := t22 + #0
+t24 := j * #8
+t25 := &a
+t23 := t25 + t24
+t26 := *t23
+value := t26 + #0
+t27 := *value
+t28 := *value
+IF t27 < t28 GOTO label10
+GOTO label11
+LABEL label10 :
+DEC t 8
+t31 := i * #8
+t32 := &a
+t30 := t32 + t31
+t33 := *t30
+value := t33 + #0
+t35 := &t
+value := t35 + #0
+t36 := *value
+*value := t36
+t39 := i * #8
+t40 := &a
+t38 := t40 + t39
+t41 := *t38
+index := t41 + #4
+t43 := &t
+index := t43 + #4
+t44 := *index
+*index := t44
+t47 := j * #8
+t48 := &a
+t46 := t48 + t47
+t49 := *t46
+value := t49 + #0
+t52 := i * #8
+t53 := &a
+t51 := t53 + t52
+t54 := *t51
+value := t54 + #0
+t55 := *value
+*value := t55
+t58 := j * #8
+t59 := &a
+t57 := t59 + t58
+t60 := *t57
+index := t60 + #4
+t63 := i * #8
+t64 := &a
+t62 := t64 + t63
+t65 := *t62
+index := t65 + #4
+t66 := *index
+*index := t66
+t68 := &t
+value := t68 + #0
+t71 := j * #8
+t72 := &a
+t70 := t72 + t71
+t73 := *t70
+value := t73 + #0
+t74 := *value
+*value := t74
+t76 := &t
+index := t76 + #4
+t79 := j * #8
+t80 := &a
+t78 := t80 + t79
+t81 := *t78
+index := t81 + #4
+t82 := *index
+*index := t82
+LABEL label11 :
+t83 := j + #1
+j := t83
+GOTO label7
+LABEL label9 :
+t84 := i + #1
+i := t84
+GOTO label4
+LABEL label6 :
+i := #0
+LABEL label12 :
+IF i < n GOTO label13
+GOTO label14
+LABEL label13 :
+t87 := i * #8
+t88 := &a
+t86 := t88 + t87
+t89 := *t86
+value := t89 + #0
+t90 := *value
+WRITE t90
+t93 := i * #8
+t94 := &a
+t92 := t94 + t93
+t95 := *t92
+index := t95 + #4
+t96 := *index
+WRITE t96
+t97 := i + #1
+i := t97
+GOTO label12
+LABEL label14 :
+RETURN #0
+FUNCTION main :
+READ t98
+m := t98
+IF m >= #100 GOTO label15
+GOTO label16
+LABEL label15 :
+t99 := #0 - #1
+WRITE t99
+GOTO label17
+LABEL label16 :
+ARG m
+t100 := CALL sort
+LABEL label17 :
+RETURN #0

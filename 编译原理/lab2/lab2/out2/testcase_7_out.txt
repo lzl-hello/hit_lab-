@@ -1,0 +1,3 @@
+Error type 7 at Line 18: Type mismatched for operands.
+Error type 7 at Line 21: Type mismatched for operands.
+Error type 7 at Line 23: Type mismatched for operands.

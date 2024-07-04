@@ -1,0 +1,39 @@
+FUNCTION main :
+digits := #0
+counter := #0
+READ t1
+n := t1
+LABEL label1 :
+IF n > #0 GOTO label2
+GOTO label3
+LABEL label2 :
+t4 := n / #10
+t3 := t4 * #10
+t2 := n - t3
+remain := t2
+t5 := n / #10
+n := t5
+t7 := digits + #1
+digits := t7
+m := t6
+LABEL label4 :
+IF m > #0 GOTO label7
+GOTO label6
+LABEL label7 :
+IF remain > #0 GOTO label5
+GOTO label6
+LABEL label5 :
+t9 := m * remain
+t8 := counter + t9
+counter := t8
+t10 := m - #1
+m := t10
+t11 := remain - #1
+remain := t11
+GOTO label4
+LABEL label6 :
+GOTO label1
+LABEL label3 :
+WRITE digits
+WRITE counter
+RETURN #0

@@ -1,0 +1,5 @@
+Error type B at line 3: syntax error.
+Error type A at Line 3: Illegal ID "0x3F".
+Error type A at Line 4: Illegal ID "0x05Ab".
+Error type A at Line 5: Illegal ID "0X2b".
+Error type A at Line 6: Illegal ID "0XcDfE170".

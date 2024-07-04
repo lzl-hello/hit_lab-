@@ -1,0 +1,170 @@
+FUNCTION main :
+a := #3
+b := #4
+i := #0
+sum := #0
+DEC array 600
+t1 := a * a
+d := t1
+t2 := b * b
+e := t2
+t3 := #0 - #1
+IF t3 != #0 GOTO label1
+GOTO label3
+LABEL label3 :
+t4 := d + e
+IF t4 > #0 GOTO label1
+GOTO label2
+LABEL label1 :
+t8 := a * a
+t9 := b * b
+t7 := t8 - t9
+t10 := d * e
+t6 := t7 + t10
+t11 := a - #8
+t5 := t6 / t11
+i := t5
+LABEL label2 :
+t17 := #1 + #2
+t16 := a * t17
+t15 := #7 - t16
+t20 := #10 - #1
+t19 := #36 / t20
+t18 := t19 * b
+t14 := t15 - t18
+t21 := d * e
+t13 := t14 + t21
+t12 := #0 - t13
+c := t12
+t22 := c - c
+i := t22
+LABEL label4 :
+t24 := #100 + #50
+IF i < t24 GOTO label5
+GOTO label6
+LABEL label5 :
+t25 := i * #4
+t26 := &array
+t24 := t26 + t25
+*t24 := #1
+t27 := i + #1
+i := t27
+GOTO label4
+LABEL label6 :
+t32 := #0 * #4
+t33 := &array
+t31 := t33 + t32
+t34 := *t31
+t30 := t34 + d
+t29 := t30 - #1
+t28 := t29 - d
+i := t28
+LABEL label7 :
+t39 := b * b
+t38 := c - t39
+t40 := a * a
+t37 := t38 + t40
+t36 := #1 * t37
+t36 := #0 - t36
+IF i < t36 GOTO label8
+GOTO label9
+LABEL label8 :
+t42 := a + #4
+t41 := t42 - b
+k := t41
+j := d
+t43 := k - #1
+l := t43
+LABEL label10 :
+t46 := a + b
+t45 := t46 - #10
+t45 := t45 + #3
+IF j > t45 GOTO label11
+GOTO label12
+LABEL label11 :
+f := #0
+t49 := i / #10
+t50 := t49 * #4
+t51 := &array
+t48 := t51 + t50
+t52 := j * #3
+t53 := *t48
+t47 := t53 + t52
+t55 := i / #10
+t56 := t55 * #4
+t57 := &array
+t54 := t57 + t56
+*t54 := t47
+IF l == #2 GOTO label13
+GOTO label14
+LABEL label13 :
+t60 := i / #10
+t61 := t60 * #4
+t62 := &array
+t59 := t62 + t61
+t64 := j * #3
+t63 := #2 + t64
+t65 := *t59
+t58 := t65 - t63
+t67 := i / #10
+t68 := t67 * #4
+t69 := &array
+t66 := t69 + t68
+*t66 := t58
+LABEL label14 :
+IF i > #100 GOTO label15
+GOTO label16
+LABEL label15 :
+t71 := j / #2
+t70 := t71 - #1
+f := t70
+GOTO label17
+LABEL label16 :
+t74 := i / #10
+t75 := t74 * #4
+t76 := &array
+t73 := t76 + t75
+t77 := *t73
+t72 := t77 + j
+t79 := i / #10
+t80 := t79 * #4
+t81 := &array
+t78 := t81 + t80
+*t78 := t72
+LABEL label17 :
+t82 := f - #1
+f := t82
+t84 := j / #2
+t83 := t84 - #1
+j := t83
+GOTO label10
+LABEL label12 :
+t85 := b + sum
+IF t85 < d GOTO label18
+GOTO label20
+LABEL label20 :
+IF e != #0 GOTO label18
+GOTO label19
+LABEL label18 :
+t86 := i + #1
+i := t86
+LABEL label19 :
+GOTO label7
+LABEL label9 :
+i := #0
+LABEL label21 :
+IF i < #150 GOTO label22
+GOTO label23
+LABEL label22 :
+t89 := i * #4
+t90 := &array
+t88 := t90 + t89
+t91 := *t88
+t87 := sum + t91
+sum := t87
+t92 := i + #1
+i := t92
+GOTO label21
+LABEL label23 :
+WRITE sum
+RETURN #0

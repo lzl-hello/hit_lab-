@@ -1,0 +1,3 @@
+Error type B at line 3: syntax error.
+Error type A at Line 3: Illegal floating point number "1.05e".
+Error type A at Line 4: Illegal ID "0x3G".

@@ -1,0 +1,2 @@
+Error type 13 at Line 23: Illegal use of ".".
+Error type 13 at Line 31: Illegal use of ".".

@@ -1,0 +1,2 @@
+Error type 2 at Line 4: Undefined function "inc".
+Error type 2 at Line 5: Undefined function "write".

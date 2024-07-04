@@ -1,0 +1,94 @@
+FUNCTION sort :
+PARAM n
+DEC a 400
+i := #0
+j := #0
+LABEL label1 :
+IF i < n GOTO label2
+GOTO label3
+LABEL label2 :
+t2 := i * #2
+t1 := #100 - t2
+t4 := i * #4
+t5 := &a
+t3 := t5 + t4
+*t3 := t1
+t6 := i + #1
+i := t6
+GOTO label1
+LABEL label3 :
+i := #0
+LABEL label4 :
+IF i < n GOTO label5
+GOTO label6
+LABEL label5 :
+j := #0
+LABEL label7 :
+IF j < i GOTO label8
+GOTO label9
+LABEL label8 :
+t9 := i * #4
+t10 := &a
+t7 := t10 + t9
+t11 := j * #4
+t12 := &a
+t8 := t12 + t11
+t13 := *t7
+t14 := *t8
+IF t13 < t14 GOTO label10
+GOTO label11
+LABEL label10 :
+t16 := i * #4
+t17 := &a
+t15 := t17 + t16
+t := *t15
+t19 := j * #4
+t20 := &a
+t18 := t20 + t19
+t22 := i * #4
+t23 := &a
+t21 := t23 + t22
+t24 := *t18
+*t21 := t24
+t26 := j * #4
+t27 := &a
+t25 := t27 + t26
+*t25 := t
+LABEL label11 :
+t28 := j + #1
+j := t28
+GOTO label7
+LABEL label9 :
+t29 := i + #1
+i := t29
+GOTO label4
+LABEL label6 :
+i := #0
+LABEL label12 :
+IF i < n GOTO label13
+GOTO label14
+LABEL label13 :
+t31 := i * #4
+t32 := &a
+t30 := t32 + t31
+t33 := *t30
+WRITE t33
+t34 := i + #1
+i := t34
+GOTO label12
+LABEL label14 :
+RETURN #0
+FUNCTION main :
+READ t35
+m := t35
+IF m >= #100 GOTO label15
+GOTO label16
+LABEL label15 :
+t36 := #0 - #1
+WRITE t36
+GOTO label17
+LABEL label16 :
+ARG m
+t37 := CALL sort
+LABEL label17 :
+RETURN #0

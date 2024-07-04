@@ -1,0 +1,321 @@
+Program (1)
+  ExtDefList (1)
+    ExtDef (1)
+      Specifier (1)
+        StructSpecifier (1)
+          STRUCT
+          OptTag (1)
+            ID: Complex
+          LC
+          DefList (3)
+            Def (3)
+              Specifier (3)
+                TYPE: float
+              DecList (3)
+                Dec (3)
+                  VarDec (3)
+                    ID: real
+                COMMA
+                DecList (3)
+                  Dec (3)
+                    VarDec (3)
+                      ID: image
+              SEMI
+          RC
+      SEMI
+    ExtDefList (6)
+      ExtDef (6)
+        Specifier (6)
+          StructSpecifier (6)
+            STRUCT
+            Tag (6)
+              ID: Complex
+        FunDec (6)
+          ID: multiply
+          LP
+          VarList (6)
+            ParamDec (6)
+              Specifier (6)
+                StructSpecifier (6)
+                  STRUCT
+                  Tag (6)
+                    ID: Complex
+              VarDec (6)
+                ID: x
+            COMMA
+            VarList (6)
+              ParamDec (6)
+                Specifier (6)
+                  StructSpecifier (6)
+                    STRUCT
+                    Tag (6)
+                      ID: Complex
+                VarDec (6)
+                  ID: y
+          RP
+        CompSt (7)
+          LC
+          DefList (8)
+            Def (8)
+              Specifier (8)
+                StructSpecifier (8)
+                  STRUCT
+                  Tag (8)
+                    ID: Complex
+              DecList (8)
+                Dec (8)
+                  VarDec (8)
+                    ID: z
+              SEMI
+          StmtList (9)
+            Stmt (9)
+              Exp (9)
+                Exp (9)
+                  Exp (9)
+                    ID: z
+                  DOT
+                  ID: real
+                ASSIGNOP
+                Exp (9)
+                  Exp (9)
+                    Exp (9)
+                      Exp (9)
+                        ID: x
+                      DOT
+                      ID: real
+                    STAR
+                    Exp (9)
+                      Exp (9)
+                        ID: y
+                      DOT
+                      ID: real
+                  MINUS
+                  Exp (9)
+                    Exp (9)
+                      Exp (9)
+                        ID: x
+                      DOT
+                      ID: image
+                    STAR
+                    Exp (9)
+                      Exp (9)
+                        ID: y
+                      DOT
+                      ID: image
+              SEMI
+            StmtList (10)
+              Stmt (10)
+                Exp (10)
+                  Exp (10)
+                    Exp (10)
+                      ID: z
+                    DOT
+                    ID: image
+                  ASSIGNOP
+                  Exp (10)
+                    Exp (10)
+                      Exp (10)
+                        Exp (10)
+                          ID: x
+                        DOT
+                        ID: real
+                      STAR
+                      Exp (10)
+                        Exp (10)
+                          ID: y
+                        DOT
+                        ID: image
+                    PLUS
+                    Exp (10)
+                      Exp (10)
+                        Exp (10)
+                          ID: y
+                        DOT
+                        ID: real
+                      STAR
+                      Exp (10)
+                        Exp (10)
+                          ID: x
+                        DOT
+                        ID: image
+                SEMI
+              StmtList (11)
+                Stmt (11)
+                  RETURN
+                  Exp (11)
+                    ID: z
+                  SEMI
+          RC
+      ExtDefList (14)
+        ExtDef (14)
+          Specifier (14)
+            StructSpecifier (14)
+              STRUCT
+              Tag (14)
+                ID: Complex
+          FunDec (14)
+            ID: divide
+            LP
+            VarList (14)
+              ParamDec (14)
+                Specifier (14)
+                  StructSpecifier (14)
+                    STRUCT
+                    Tag (14)
+                      ID: Complex
+                VarDec (14)
+                  ID: x
+              COMMA
+              VarList (14)
+                ParamDec (14)
+                  Specifier (14)
+                    StructSpecifier (14)
+                      STRUCT
+                      Tag (14)
+                        ID: Complex
+                  VarDec (14)
+                    ID: y
+            RP
+          CompSt (15)
+            LC
+            DefList (16)
+              Def (16)
+                Specifier (16)
+                  StructSpecifier (16)
+                    STRUCT
+                    Tag (16)
+                      ID: Complex
+                DecList (16)
+                  Dec (16)
+                    VarDec (16)
+                      ID: z
+                SEMI
+              DefList (17)
+                Def (17)
+                  Specifier (17)
+                    TYPE: float
+                  DecList (17)
+                    Dec (17)
+                      VarDec (17)
+                        ID: abs_sqr
+                      ASSIGNOP
+                      Exp (17)
+                        Exp (17)
+                          Exp (17)
+                            Exp (17)
+                              ID: y
+                            DOT
+                            ID: real
+                          STAR
+                          Exp (17)
+                            Exp (17)
+                              ID: y
+                            DOT
+                            ID: real
+                        PLUS
+                        Exp (17)
+                          Exp (17)
+                            Exp (17)
+                              ID: y
+                            DOT
+                            ID: image
+                          STAR
+                          Exp (17)
+                            Exp (17)
+                              ID: y
+                            DOT
+                            ID: image
+                  SEMI
+            StmtList (18)
+              Stmt (18)
+                Exp (18)
+                  Exp (18)
+                    Exp (18)
+                      ID: z
+                    DOT
+                    ID: real
+                  ASSIGNOP
+                  Exp (18)
+                    Exp (18)
+                      LP
+                      Exp (18)
+                        Exp (18)
+                          Exp (18)
+                            Exp (18)
+                              ID: x
+                            DOT
+                            ID: real
+                          STAR
+                          Exp (18)
+                            Exp (18)
+                              ID: y
+                            DOT
+                            ID: real
+                        PLUS
+                        Exp (18)
+                          Exp (18)
+                            Exp (18)
+                              ID: x
+                            DOT
+                            ID: image
+                          STAR
+                          Exp (18)
+                            Exp (18)
+                              ID: y
+                            DOT
+                            ID: image
+                      RP
+                    DIV
+                    Exp (18)
+                      ID: abs_sqr
+                SEMI
+              StmtList (19)
+                Stmt (19)
+                  Exp (19)
+                    Exp (19)
+                      Exp (19)
+                        ID: z
+                      DOT
+                      ID: image
+                    ASSIGNOP
+                    Exp (19)
+                      Exp (19)
+                        LP
+                        Exp (19)
+                          Exp (19)
+                            Exp (19)
+                              Exp (19)
+                                ID: y
+                              DOT
+                              ID: real
+                            STAR
+                            Exp (19)
+                              Exp (19)
+                                ID: x
+                              DOT
+                              ID: image
+                          MINUS
+                          Exp (19)
+                            Exp (19)
+                              Exp (19)
+                                ID: x
+                              DOT
+                              ID: real
+                            STAR
+                            Exp (19)
+                              Exp (19)
+                                ID: y
+                              DOT
+                              ID: image
+                        RP
+                      DIV
+                      Exp (19)
+                        ID: abs_sqr
+                  SEMI
+                StmtList (20)
+                  Stmt (20)
+                    RETURN
+                    Exp (20)
+                      ID: z
+                    SEMI
+            RC

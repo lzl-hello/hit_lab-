@@ -1,0 +1,70 @@
+FUNCTION main :
+DEC a 80
+i := #0
+j := #0
+max := #0
+min := #1000000
+min_index := #0
+max_index := #0
+LABEL label1 :
+IF i < #20 GOTO label2
+GOTO label3
+LABEL label2 :
+t4 := #0 - #1
+t3 := j * t4
+t6 := j * j
+t5 := t6 / #100
+t2 := t3 + t5
+t1 := t2 - #19
+t8 := i * #4
+t9 := &a
+t7 := t9 + t8
+*t7 := t1
+t11 := i * #4
+t12 := &a
+t10 := t12 + t11
+j := *t10
+t13 := i + #1
+i := t13
+GOTO label1
+LABEL label3 :
+i := #0
+LABEL label4 :
+IF i < #20 GOTO label5
+GOTO label6
+LABEL label5 :
+t16 := i * #4
+t17 := &a
+t14 := t17 + t16
+t17 := *t14
+IF t17 < min GOTO label7
+GOTO label8
+LABEL label7 :
+t19 := i * #4
+t20 := &a
+t18 := t20 + t19
+min := *t18
+min_index := i
+LABEL label8 :
+t23 := i * #4
+t24 := &a
+t21 := t24 + t23
+t24 := *t21
+IF t24 > max GOTO label9
+GOTO label10
+LABEL label9 :
+t26 := i * #4
+t27 := &a
+t25 := t27 + t26
+max := *t25
+max_index := i
+LABEL label10 :
+t28 := i + #1
+i := t28
+GOTO label4
+LABEL label6 :
+WRITE min_index
+WRITE min
+WRITE max_index
+WRITE max
+RETURN #0

@@ -1,0 +1,2 @@
+Error type B at line 4: syntax error.
+Error type A at Line 4: Mysterious character '%'.
